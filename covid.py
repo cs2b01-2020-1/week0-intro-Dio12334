@@ -8,14 +8,14 @@ def transformar_string(archivo):
 
 def comparador(string_1, string_2):
     counter = 0
-    tot = 0
+    tot = len(string_1)
     if len(string_1) <= len(string_2):
-        tot = len(string_1)
+        
         for y in range(len(string_1)):
             if string_1[y] ==string_2[y]:
                 counter += 1
     else:
-        tot = len(string_2)
+        #tot = len(string_2)
         for y in range(len(string_2)):
             if string_1[y] == string_2[y]:
                 counter += 1
